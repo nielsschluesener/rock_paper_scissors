@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Futura;
+      height: 100vh;
+      width: 100%;
+      transition: background-color 4s;
+      background-color: white;
+    text-align: center;
+  }
+
+  h1{
+      margin-bottom: 25px;  
+      margin-top: 10px;
+      transition: all 1s;
+  }
+
+  p{
+      margin:2px;
+      color: white;
+  }
+  
+  img{
+      border-radius: 15px;
+      box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  button {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    color: #1BD2B2;
+    background: white;
+    font-weight: bold;
+    padding: 15px 45px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    cursor: pointer;
+    transition: font-size 3s, transform .5s;
+  }
+
+  button:hover{
+      transform: scale(1.05);
+  }
+
+  button:disabled{
+    cursor: progress;
+    color: #1f1f1f;
+}
+  

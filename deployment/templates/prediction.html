@@ -1,23 +1,35 @@
 <html>
 
-    <body>
-        
-    {{probabilities}}
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rock, Paper, Scissors</title>
+      <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css') }}">
+      <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='assets/img/fav/apple-touch-icon.png') }}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='assets/img/fav/favicon-32x32.png') }}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='assets/img/fav/favicon-16x16.png') }}">
+  </head>
 
-    <br>
+   <body style="background-color: #1BD2B2;">
 
-    {{prediction}}
+      <br>
+      <h1 style="color:white; font-size: 60px;">{{game_result}}</h1>
+      
+      <img src="{{url_for('static', filename='')}}{{display_image}}" width="300px" />
+      <p style="font-size:22px">{{prediction}}</p>
+      <p style="font-size:9px; color: #024873; margin-top: -5px;  font-style: italic;">detected with a probability of {{probability}}</p>
 
-    <br>
+      <p style="margin: 5px; font-size:16px;">vs</p>
 
-    <img src="{{url_for('static', filename='')}}{{display_image}}" />
+      <p style="font-size:22px">{{game_choice}}</p>
+      <img src="{{url_for('static', filename='')}}{{game_image}}" width="300px" />
 
-    </body>
-
-    <br>
-    <br>
+   </body>
     
-    <a href='/'>Go back and make another prediction!</a>
+   <form method="GET" action="{{url_for('index')}}">
+      <button style="color: #024873;">AGAIN!</button>
+  </form>
 
 </html>
 

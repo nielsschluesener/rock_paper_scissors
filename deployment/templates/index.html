@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <body>
-    <h1>Lets play Rock, Paper, Scissors!</h1>
-    <div>
-        <img src="{{ url_for('video') }}" width="50%"/>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='assets/css/style.css') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static',filename='assets/img/fav/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static',filename='assets/img/fav/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='assets/img/fav/favicon-16x16.png') }}">
+</head>
 
-    <form method="POST", action="{{url_for('pred')}}">
-        <input type = "submit", value = "Play!">
-</form>
-            
-    </body>
+
+<body>
+
+    <h1 style = "color: #1BD2B2;" id="title">Let's play <br> ROCK, PAPER, SCISSORS!</h1>
+
+    <img src="{{ url_for('video') }}" width="500px"/> 
+
+    <br>
+
+    <p style="color:#022B44; transition: all 1s;" id="explanation">Put your hand a few centimeters in front your webcam and<br>
+        press PLAY! to start the countdown!</p>
+
+        
+
+    <form method="POST" id="takePic" action="{{url_for('pred')}}">
+        <button type="submit" id="shutter_btn">PLAY!</button>
+    </form>
+
+    <script src="{{ url_for('static',filename='assets/js/script.js') }}"></script>
+
+</body>
 
 </html>
