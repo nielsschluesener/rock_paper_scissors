@@ -44,7 +44,7 @@ picForm.addEventListener('submit', event => {
 
         console.log('play_sound');
 
-        var audio = new Audio('assets/sfx/shutter_sfx.wav');
+        var audio = new Audio('static/assets/sfx/shutter_sfx.wav');
         audio.play();
 
         window.setTimeout(function () {

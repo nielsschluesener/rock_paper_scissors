@@ -16,15 +16,22 @@
       <br>
       <h1 style="color:white; font-size: 60px;">{{game_result}}</h1>
       
-      <img src="{{url_for('static', filename='')}}{{display_image}}" width="300px" />
-      <p style="font-size:22px">{{prediction}}</p>
-      <p style="font-size:9px; color: #024873; margin-top: -5px;  font-style: italic;">detected with a probability of {{probability}}</p>
+      <div style="display: flex; flex-direction: row;">
+         <div style="display: flex; flex-direction: column;">
+            <img src="{{url_for('static', filename='')}}{{display_image}}" width="300px" />
+            <p style="font-size:22px">{{prediction}}</p>
+            <p style="font-size:9px; color: #024873; margin-top: -5px;  font-style: italic;">detected with a probability of {{probability}}</p>
+         </div>
 
-      <p style="margin: 5px; font-size:16px;">vs</p>
+         <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
+            <p style="margin: 25px; margin-bottom:85px; font-size:16px;">vs</p>
+         </div>
 
-      <p style="font-size:22px">{{game_choice}}</p>
-      <img src="{{url_for('static', filename='')}}{{game_image}}" width="300px" />
-
+         <div style="display: flex; flex-direction: column;">
+            <img src="{{url_for('static', filename='')}}{{game_image}}" width="300px" />
+            <p style="font-size:22px">{{game_choice}}</p>
+         </div>
+      </div>
    </body>
     
    <form method="GET" action="{{url_for('index')}}">
