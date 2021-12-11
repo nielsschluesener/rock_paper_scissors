@@ -1,3 +1,7 @@
+/*
+This script adds a countdown to the "Play"-Button with flash and a shutter-sound.
+*/
+
 var picForm = document.querySelector('form');
 
 picForm.addEventListener('submit', event => {
@@ -18,11 +22,7 @@ picForm.addEventListener('submit', event => {
 
     document.body.style.backgroundColor = '#1BD2B2';
 
-
-
     var countdown = window.setInterval(function () {
-
-
 
         var seconds = timer.innerHTML;
         seconds = seconds - 1;
