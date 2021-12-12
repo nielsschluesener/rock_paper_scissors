@@ -10,8 +10,8 @@ The goal of the project is to build a machine learning model, that detects wheth
 
 The project is dividid into different parts: <br>
 
-* *data_gen.py:* Python app to generate training- & testing data with a webcam (results in data-directory)
-* *data_prep.ipynb:* Analysing and prepping data for the modelling
-* *modelling.ipynb:* Finding the best hyperparameters and training the final model
-* *evaluation.ipynb:* Evaluating the models' performance and to make the black-box understandable
-* *deployment:* Deployment of the web-based game 'Rock, Paper, Scissors' in which the final model is embedded
+* [data_gen.py](data_gen.py): Python app to generate training- & testing data with a webcam (results in [data](data)-directory)
+* [data_prep.ipynb](data_prep.ipynb): Analysing and prepping data for the modelling
+* [modelling.ipynb](modelling.ipynb): Finding the best hyperparameters and training the final model
+* [evaluation.ipynb](evaluation.ipynb): Evaluating the models' performance and to make the black-box understandable
+* [deployment](deployment): Deployment of the web-based game 'Rock, Paper, Scissors' in which the final model is embedded
