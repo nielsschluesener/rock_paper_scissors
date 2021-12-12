@@ -15,3 +15,5 @@ The project is dividid into different parts: <br>
 * [modelling.ipynb](modelling.ipynb): Finding the best hyperparameters and training the final model
 * [evaluation.ipynb](evaluation.ipynb): Evaluating the models' performance and to make the black-box understandable
 * [deployment](deployment): Deployment of the web-based game 'Rock, Paper, Scissors' in which the final model is embedded
+
+So far, the game can not be played online. Instead, you have to run [app.py](deployment/app.py) and go to the development server, which should be available under: http://127.0.0.1:5000/
